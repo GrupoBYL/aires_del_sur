@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Formulario Aires del Sur">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <title>Aires del Sur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css">
+   
+</head>
+
+<body onload="mueveReloj()">
+    <nav class="bg-dark ">
+        <div class="container">
+            <div>
+
+                <img width="80px" src="assets/img/logo-loga.svg" alt="">
+            </div>
+        </div>
+    </nav>
+    <section id="portada" class="hero is-fullheight fondo-header ">
+
+        <div class="hero-body">
+            <div class="container ">
+
+
+                <div class="columns is-centered height">
+
+                    <div class="column is-7"></div>
+
+                    <div class="column  is-5 flex">
+                        
+                            <p class="f_mpb is-size-5 has-text-black  has-text-centered">
+                                PRÓXIMO PROYECTO EN ALTO HOSPICIO
+                            </p>
+                        <div class="bloque-pe">
+
+                            <p class="has-text-centered is-size-6  p-1 f_mpr p__lanzamiento">INSCRÍBETE PARA SU PREVENTA</p>
+                        </div>
+                        <div class="container-logo has-text-centered ">
+
+                            <img src="assets/img/logo.svg" alt="logo Aires del Sur" class="logo">
+                        </div>
+                        
+
+                            <button class="btn-plantas mb-2 contacto f_sr has-text-white has-text-centered is-size-6 ">VER PLANTAS 2 Y 3 DORMS.</button>
+                        
+                        <div class="container-form">
+
+                            <form id="contacto" name="contacto">
+
+                                <div class="field">
+                                    <div class="control">
+                                        <input type="text" placeholder="NOMBRE COMPLETO" name="nombre" id="nombre"
+                                            class="input is-normal f_sr is-size-7-mobile bold">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <input type="text" placeholder="EMAIL" name="email" id="email"
+                                            class="input is-normal f_sr is-size-7-mobile bold">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <input type="text" placeholder="RUT" name="rut" id="rut" maxlength="12"
+                                            class="input is-normal f_sr is-size-7-mobile bold">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <input type="text" placeholder="TELEFONO" name="telefono" id="telefono"
+                                            class="input is-normal f_sr is-size-7-mobile bold">
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <div class="control">
+                                        <select name="tipo_depto" id="tipo_depto"
+                                            class="f_sr input is-size-6 is-size-7-mobile bold">
+                                            <option value="">ELIGE TU DEPTO.</option>
+                                            <option value="tipoA">Depto Tipo A/A2 - 2 Dorms. + 2 Baño
+                                            </option>
+                                            <option value="tipoB">Depto Tipo B - 3 Dorms. + 2 Baño
+                                            </option>
+                                            <option value="tipoC">Depto Tipo C - 3 Dorms. + 1 Baño
+                                            </option>
+                                            <option value="tipoD">Depto Tipo D - 3 Dorms. + 2 Baño
+                                            </option>
+                                            <option value="tipoE">Depto Tipo E - 3 Dorms. + 2 Baño
+                                            </option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--como llegaste-->
+                                <div class="field">
+                                    <div class="control">
+                                        <select name="sector" id="sector"
+                                            class="f_sr input is-size-6 is-size-7-mobile bold">
+                                            <option value="">¿CÓMO LLEGASTE A AIRES DEL SUR?</option>
+                                            <option value="terreno">Publicidad en terreno</option>
+                                            <option value="RRSS">Publicidad en RRSS</option>
+                                            <option value="google">Publicidad en Google</option>
+                                            <option value="email">Correo electrónico</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--contacto-->
+                                <div class="field">
+                                    <div class="control">
+                                        <select name="canal" id="canal"
+                                            class="f_sr input is-size-6 is-size-7-mobile bold">
+                                            <option value="">¿CÓMO QUIERES QUE TE CONTACTEMOS?</option>
+                                            <option value="Por WhatsApp">Por WhatsApp</option>
+                                            <option value="Por teléfono">Por teléfono</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--reloj para capturar hora actual y enviar a db -->
+                                    <input class="is-hidden" type="text" name="reloj" size="35">
+                                <p class="has-text-primary has-text-centered is-size-5 p-3">¿TE INTERESA?</p>
+                                <div class="btn-submit">
+                                     <button type="submit" class="bloque-btninfo mb-2 f_sr has-text-white has-text-centered is-size-6 title-inscripcion">
+                                       QUIERO MÁS INFORMACIÓN DE AIRES DEL SUR
+                                    </button>
+                                
+                                </div>
+                                   
+
+                            </form>
+                            <form id="tellamamos">
+                                <div class="columns  is-centered has-text-centered has-text-white pt-40">
+                                    <p class="control is-expanded">
+                                        <div class="column is-12 has-text-centered">
+                                            <!--<p class="is-size-7 mt-2">TE LLAMAMOS EN UN MOMENTO</p>
+                                            <div class="field is-grouped mt-1">
+                                                <input class="input is-size-7-mobile bold" maxlength="11" type="text"
+                                                    id="llamada" name="llamada" placeholder="Teléfono 56943214321">
+                                                <p class="control">
+                                                    <button type="submit"
+                                                        class="button is-success btn-send has-text-black f_gpbol">ENVIAR</button>
+                                                </p>
+                                            </div>
+                                            <label id="llamada-error" class="error" for="llamada"></label>-->
+                                            <!-- <div class="disclaimer">
+                                                <span class="is-size-7">Atención: Lunes a Jueves de 9:00 a 18:30 hrs. y
+                                                    Viernes de 9:00 a 15:00
+                                                    hrs.</span>
+                                            </div>
+                                            <a href="mailto:terracalama@loga.cl">
+
+                                                <p class="has-text-centered is-size-6 has-text-white"><img
+                                                        class="img__mail" src="assets/img/mail.png"
+                                                        alt="">terracalama@loga.cl</p>
+                                            </a> -->
+                                        </div>
+
+                                </div>
+                            </form>
+                        </div>
+
+
+
+
+                       <!--  <div class="float-btn-hide contacto">
+                            <a>
+                                <img src="assets/img/new-button.png" alt="">
+                            </a> -->
+                        </div>
+
+                        <!-- <div id="stripeMobile" class="contacto">
+                            <a>
+                                <p class="has-text-centered has-text-black has-text-weight-bold">VER CASAS Y UBICACIÓN
+                                </p>
+                            </a>
+                        </div> -->
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- <div class="float-btn contacto">
+                <a>
+                    <img src="assets/img/new-button.png" alt="">
+                </a>
+            </div> -->
+
+        </div>
+        </div>
+
+        <div id="modalContacto" class="modal is-clipped">
+            <div id="closeModalContent" class="modal-background"></div>
+            <div class="modal-content">
+              
+                <div class="has-text-centered mb-2">
+                    <div class="container-hero-text">
+
+                        <img class="hero-modal" src="assets/img/hero-modal-new.png" alt="">
+                      <!--   <p class="f_sr hero-text1 has-text-white is-size-4 is-size-7-mobile">Vive Momentos</p>
+                        <p class="f_kinan  hero-text2 has-text-white is-size-4-mobile">que inspiran</p> -->
+                    </div>
+                    <h2 class="f_sr is-size-4">Elige el departamento de tu interés en Aires del Sur</h2>
+                </div>
+
+                <div class="columns">
+
+                    <div class="column is-4 ">
+                        <div>
+                            <a class="linkTipoA" href="">
+
+                                <img src="assets/img/depto-tipoa.png" alt="">                          
+                            </a>
+                        </div>
+
+                        <div class="topologia-modal">
+                            <p class="squareTypeA is-size-6 f_mpb">DEPTOS. TIPO A/TIPO A2</p>
+                            <P class="squareTypeA is-size-6 is-size-7-mobile f_mpr">2D+2B - xx,xx m2</P>
+                        </div>
+
+                    </div>
+                    <div class="column is-4 ">
+                        <div>
+                            <a class="linkTipoB" href="">
+
+                                <img src="assets/img/depto-tipo-b.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="topologia-modal">
+                            <p class="squareTypeB is-size-6 f_mpb">DEPTOS. TIPO B</p>
+                            <P class="squareTypeB is-size-6 is-size-7-mobile f_mpr">3D+2B - xx,xx m2</P>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div>
+                            <a class="linkTipoC" href="">
+
+                                <img src="assets/img/depto-tipo-c.png" alt="">                         
+                            </a>
+                        </div>
+
+                        <div class="topologia-modal">
+                            <p class="squareTypeC is-size-6 f_mpb ">DEPTOS. TIPO C</p>
+                            <P class="squareTypeC is-size-6 is-size-7-mobile f_mpr">3D+1B - xx,xx m2</P>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="columns">
+
+                    <div class="column is-4 ">
+                        <div>
+                            <a class="linkTipoD" href="">
+
+                                <img src="assets/img/depto-tipo-d.png" alt="">                          
+                            </a>
+                        </div>
+
+                        <div class="topologia-modal">
+                            <p class="squareTypeD is-size-6 f_mpb">DEPTOS. TIPO D</p>
+                            <P class="squareTypeD is-size-6 is-size-7-mobile f_mpr">3D+2B - xx,xx m2</P>
+                        </div>
+
+                    </div>
+                    <div class="column is-4 ">
+                        <div>
+                            <a class="linkTipoE" href="">
+
+                                <img src="assets/img/depto-tipo-e.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="topologia-modal">
+                            <p class="squareTypeE is-size-6 f_mpb">DEPTOS. TIPO E</p>
+                            <P class="squareTypeE is-size-6 is-size-7-mobile f_mpr">3D+2B - xx,xx m2</P>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div>
+                            <img src="assets/img/topologia-mapa.png" alt="">                         
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+                
+                <div class="columns">
+                    <div class="column is-2"></div>
+                    <div class="column is-8">
+                        <p class="bloque-adress  f_sr has-text-white is-size-5 is-size-6-mobile has-text-centered my-1">DIRECCIÓN PROYECTO: AV. SANTA ROSA DE MOLLES 3948</p>
+                        <div class="columns">
+                            <div class="column is-6">
+                                <img src="assets/img/esquema.svg" alt="">
+                            </div>
+                            <div class="column is-6">
+                                <img src="assets/img/mapa-esquema.svg" alt="mapa ubicación">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+                
+                
+                <div class="container-ubicacion">
+                    
+                    <p class="f_sr legal has-text-white">*SE DEJA CONSTANCIA QUE TODAS LAS IMÁGENES, TIPOLOGÍAS, SUPERFICIES, NÚMERO DE VIVIENDAS, ARQUITECTURA, UBICACIONES Y ETAPAS DEL PROYECTO QUE SE EXHIBEN EN LA PUBLICIDAD SON DE CARÁCTER ESTRICTAMENTE PRELIMINAR Y OBEDECEN A LA PRESENTACIÓN DE UN PROYECTO EN BLANCO, RESERVÁNDOSE EXPRESAMENTE LA COMPAÑÍA LA FACULTAD Y EL DERECHO DE MODIFICARLAS Y/O REDISEÑARLAS EN LOS TÉRMINOS QUE ESTIME PERTINENTE, Y SEGÚN DISPONGAN LOS ANTECEDENTES LEGALES DEL MISMO.
+                </div>
+                </p>
+            </div>
+            <button type="button" id="closeContacto" class="modal-close " aria-label="close">(X)
+                cerrar
+            </button>
+
+
+
+
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.1.min.js"
+        integrity="sha256-APllMc0V4lf/Rb5Cz4idWUCYlBDG3b0EcN1Ushd3hpE=" crossorigin=" anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="./assets/js/jquery.validate.js"></script>
+    <!--<script src="./assets/slick/slick.min.js"></script>-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.min.js'></script>
+
+    <script src="./assets/js/functions.js"></script>
+    <script>
+        function mueveReloj() {
+            momentoActual = new Date()
+
+            horaSistema = momentoActual.toTimeString()
+
+            document.contacto.reloj.value = horaSistema
+
+            setTimeout(mueveReloj, 1000)
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,783 @@
+// 1. Importar variables iniciales
+@import "bulma/sass/utilities/initial-variables.sass";
+@import "bulma/sass/utilities/functions";
+// 2. Variables que quieras cambiar de Bulma
+// Vistas
+$primary: #8093DC;
+$secondary:#090A0A;
+$success:rgb(178, 203, 159);
+$danger:rgb(178, 115, 71);
+$red:red;
+
+//set your typography
+
+$size-1: 0.813rem;//13px
+$size-2: 1rem; 
+$size-3: 2rem;//
+
+$size-8: 1.375rem; //22px
+$size-9: 3.375rem;
+$size-10:0.60rem;
+
+// 3. Importar Bulma
+@import "bulma/bulma.sass";
+
+//fuentes
+@font-face {
+   font-family: "f_mpr";
+   src: url("../fonts/MyriadPro-Regular.otf");
+}
+@font-face {
+   font-family: "f_mps";
+   src: url("../fonts/MyriadPro-Semibold.otf");
+}
+@font-face {
+   font-family: "f_mpb";
+   src: url("../fonts/MyriadPro-Bold.otf");
+}
+@font-face {
+   font-family: "f_sr";
+   src: url("../fonts/sinkin-sans.400-regular.otf");
+}
+@font-face {
+   font-family: "f_sm";
+   src: url("../fonts/sinkin-sans.500-medium.otf");
+}
+@font-face {
+   font-family: "f_sli";
+   src: url("../fonts/SinkinSans-300Light.otf");
+}
+@font-face {
+   font-family: "f_ssm";
+   src: url("../fonts/SinkinSans-600SemiBold.otf");
+}
+@font-face {
+   font-family: "f_ur";
+   src: url("../fonts/UniversLTStd.otf");
+}
+@font-face {
+   font-family: "f_ub";
+   src: url("../fonts/UniversLTStd-Bold.otf");
+}
+@font-face {
+   font-family: "f_kinan";
+   src: url("../fonts/Kinan.ttf");
+}
+@font-face {
+   font-family: "f_aquatico";
+   src: url("../fonts/Aquatico-Regular.otf");
+}
+
+
+
+
+
+
+.f_mpr {
+   font-family: "f_mpr";
+}
+
+.f_mps {
+   font-family: "f_mps";
+}
+
+.f_mpb {
+   font-family: "f_mpb";
+}
+
+.f_sr {
+   font-family: "f_sr";
+}
+
+.f_sm {
+   font-family: "f_sm";
+}
+
+.f_sli {
+   font-family: "f_sli";
+}
+
+.f_ssm {
+   font-family: "f_ssm";
+}
+
+.f_ur {
+   font-family: "f_ur";
+}
+.f_ub {
+   font-family: "f_ub";
+}
+.f_kinan {
+   font-family: "f_kinan";
+}
+.f_aquatico {
+   font-family: "f_aquatico";
+}
+.p-1 {
+   padding: 0.2rem;
+}
+
+.p-2 {
+   padding: 0.4rem;
+}
+
+.p-3 {
+   padding: 0.8rem;
+}
+
+.py-1 {
+   padding: 10px 0 20px 0;
+}
+
+
+.ml-1 {
+   margin-left: 148px;
+}
+
+.mb-1 {
+   margin-bottom: 20px;
+}
+
+.mb-2 {
+   margin-bottom: 50px;
+}
+
+.mt-1 {
+   margin-top: 10px;
+}
+
+.mt-2 {
+   margin-top: 25px;
+}
+.mt-50{
+   margin-top: 50px;
+}
+.my-1 {
+   margin: 60px 0 15px 0;
+}
+
+.text__img__pre {
+   font-size: $size-10;
+}
+
+ .fondo-header {
+   min-height: 100vh !important;
+   background-image:/* linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), */ url("../img/aires-bg.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position-y:8px ;
+   
+   
+} 
+
+
+.container-form {
+   width: 85%;
+}
+
+.legal {
+   font-size: 0.6rem;
+   width: 70%;
+   text-align: justify;
+   font-weight: 500;
+   color: black;
+   padding: 0 15px;
+}
+
+.height {
+   height: 100vh;
+}
+
+.flex {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.input {
+   border-radius: 0;
+   height: 55px;
+   background-color: rgba(255, 255, 255, 1);
+   border: none;
+   opacity: 0.9;
+   font-size: $size-1;
+   @media screen and (max-width:402px) {
+      font-size: 0.583rem !important;
+   }
+}
+.first__title{
+   font-size: 1.6rem;
+   @media only  screen and (min-width: 1280px) and (max-width: 1471px) {
+      font-size: 1.85rem;
+   }
+   @media screen and (min-width:1472px) {
+      font-size: 1.60rem;
+   }
+   @media screen and (max-width:505px) {
+      font-size: 1.7rem;
+   }
+   &-inline{
+      @media screen and (max-width: 505px) {
+         display: inline-block;
+      }
+   }
+   
+}
+
+.input::placeholder {
+   color: black;
+}
+
+.input:-ms-input-placeholder {
+   color: black;
+}
+
+/* IE 10+ */
+.input::-webkit-input-placeholder {
+   color: black;
+}
+
+/* WebKit */
+.input::-webkit-input-placeholder {
+   color: black;
+}
+
+.input:-moz-placeholder {
+   /* Firefox 18- */
+   color: black;
+}
+
+.input::-moz-placeholder {
+   /* Firefox 19+ */
+   color: black;
+}
+
+.input:-ms-input-placeholder {
+   color: black;
+}
+
+.input,
+.text-area {
+   color: black;
+}
+
+button {
+   all: unset
+}
+
+.btn-send {
+   font-size: 1.14rem;
+   border-radius: unset;
+}
+
+/* Firefox 19+ */
+.navBar{
+   
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+}
+.logo {
+   width: 280px;
+   text-align: center;
+   margin-top: 45px
+}
+.logo-container{
+   margin: 0 30px;
+}
+.spacing {
+   letter-spacing: 11.2px;
+}
+
+.f_espacios {
+   font-size: 4.44rem;
+   line-height: 0.88;
+}
+
+.f_vivir {
+   line-height: 0.6;
+}
+
+
+
+
+
+
+
+
+
+.container-ubicacion {
+   display: flex;
+   justify-content: center;
+   padding-bottom:50px;
+   padding-top: 20px;
+   flex-direction: column;
+   align-items: center;
+   background-color: $primary;
+}
+
+.img-ubicacion {
+   max-width: 70%;
+}
+
+
+.modal {
+   //display: none; /* Hidden by default */
+   position: fixed;
+   /* Stay in place */
+   z-index: 1000000;
+   /* Sit on top */
+   left: 4%;
+   top: 5%;
+   width: 93%;
+   /* Full width */
+   height: 100%;
+   /* Full height */
+   background-color: rgba(0, 0, 0, 0.4);
+   overflow: auto;
+   /* Black w/ opacity */
+}
+
+.modal-background {
+   background-color: #fff;
+}
+
+/* Modal Content/Box */
+.modal-content {
+   margin: 2% auto;
+   padding: 20px;
+   width: 90vw;
+   /* Could be more or less, depending on screen size */
+}
+
+.modal-close {
+   background-color: $primary;
+   position: absolute;
+   border-radius: unset;
+   max-width: none;
+   max-height: none;
+   width: 50px;
+   height: 50px;
+   right: 0;
+   top: 0;
+}
+
+.error {
+   color: red;
+}
+
+.is-active {
+   display: block !important;
+}
+
+.columns {
+   height: 100%;
+}
+
+/* The Close Button */
+.close {
+   color: #000;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+
+
+
+
+.field.is-grouped {
+   display: flex;
+   justify-content: center;
+}
+
+/*MOBILE*/
+
+
+#stripeMobile {
+   display: none;
+   width: 100%;
+   height: 50px;
+   margin-top: 3px;
+   bottom: 0px;
+   position: fixed;
+   background-color: #b2cb9f;
+   z-index: 1;
+   padding: 10px;
+   margin-top: 5px;
+}
+
+.bloque-adress{
+   background-color: $primary;
+   padding: 10px 0;
+}
+
+
+
+
+
+
+#stripeMobile .fono a:link,
+a:visited,
+a:active {
+   text-decoration: none;
+}
+
+#stripeMobile .mail a:link,
+a:visited,
+a:active {
+   text-decoration: none;
+}
+
+.red {
+   color: red;
+
+}
+
+.font-svg-agata {
+   max-width: 45%;
+}
+
+.font-svg-amatista {
+   max-width: 53%;
+   margin-top: 5px;
+   margin-bottom: 6px;
+}
+
+.font-svg-ambar {
+   max-width: 48%;
+   margin-bottom: 8px;
+}
+
+.hero-modal {
+   max-width: 100%;
+   margin-bottom: 30px;
+   @media screen and (max-width:786px){
+      max-width: 100%;
+   }
+}
+
+.bloque-pe {
+   p{
+      color: $primary;
+      letter-spacing: 0.15px;
+   }
+   background-color: #fff;
+   width: 85%;
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.btn-plantas {
+   padding: 8px 0;
+   background-color: $primary;
+   width: 70%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   @media screen and (min-width:769px) and (max-width:957px) {
+      flex-direction: column;
+   }
+   @media screen and (max-width: 505px) {
+         
+         font-size: 1.2rem;
+         flex-direction: column;
+         }
+   &-title{
+     @media screen and (min-width: 506px) {
+         margin-left: 5px;
+     
+         }
+      @media screen and (max-width: 505px) {
+         display: inline-block;
+     
+         }
+      }
+   }
+
+
+.bloque-btninfo{
+    background-color: $primary;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 8px 0;
+}
+.depto-relative {
+   position: relative;
+}
+
+.parrafo-imagen {
+   position: absolute;
+   right: 26px;
+   bottom: 20px;
+   color: #dbdbdb;
+}
+
+.img__mail {
+   width: 13px;
+   margin-right: 4px;
+}
+
+
+.btn-submit{
+   display: flex;
+   justify-content: center;
+}
+
+
+
+
+.squareTypeA::before{
+   content: '';
+   border: 8px solid #8093DC;
+   background-color: #8093DC;
+   margin-right: 10px;
+ 
+}
+.squareTypeB::before{
+   content: '';
+   border: 8px solid #89B51F;
+   background-color: #89B51F;
+   margin-right: 10px;
+   
+}
+.squareTypeC::before{
+   content: '';
+   border: 8px solid #00A6CE;
+   background-color: #00A6CE;
+   margin-right: 10px;
+   
+}
+.squareTypeD::before{
+   content: '';
+   border: 8px solid #D2D000;
+   background-color: #D2D000;
+   margin-right: 10px;
+   
+}
+.squareTypeE::before{
+   content: '';
+   border: 8px solid #E78600;
+   background-color: #E78600;
+   margin-right: 10px;
+   
+}
+
+.metro-cuadrado{
+   font-size: 1.08rem;
+}
+nav{
+   height:60px;
+   display: flex;
+   align-items: center;
+}
+.bg-dark{
+   background-color: $secondary;
+}
+
+.container-hero-text{
+   position: relative;
+   .hero-text1{
+      position: absolute;
+      bottom: 26%;
+      left: 42%;
+   }
+   .hero-text2{
+   font-size: $size-9;
+    position: absolute;
+    top: 69%;
+    left: 48%;
+
+   }
+}
+
+.topologia-modal{
+   margin-top: 15px;
+}
+.horario-atencion{
+   font-size: 0.66rem;
+}
+.footer{
+   width: 100%;
+   height: 60px;
+   background-color: $primary;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px 0;
+   &-icon{
+      color: #fff;
+   }
+   @media screen and (max-width:600px) {
+      height: 85px;
+   }
+}
+.footer p{
+   margin: 0 10px;
+   img{
+      margin-right: 5px;
+   }
+   a {
+      margin: 0 5px;
+      color: #fff;
+   }
+   @media screen and (max-width:600px) {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      font-size: 0.70rem;
+   }
+}
+@media screen and (max-width: 768px) {
+   .font-svg-titulo {
+      max-width: 72%;
+
+   }
+.modal-content{
+   margin: 10% auto;
+}
+   
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+   #stripeMobile {
+      display: block;
+   }
+}
+
+//media querys
+
+@media screen and(max-width: 1058px) {
+
+   .fondo-terra-3 {
+      position: absolute;
+      width: 150px;
+      bottom: -55px;
+      right: calc(100%/2.4);
+   }
+}
+
+@media only screen and (min-width: 1330px) {
+
+   .title-inscripcion,
+   .p__lanzamiento {
+      width: 100vw;
+   }
+}
+
+@media only screen and (max-width:769px) {
+   .f-size-2 {
+      font-size: 6.21vw;
+   }
+}
+
+@media only screen and (max-width: 1088px) {
+   .float-btn {
+
+      display: none;
+   }
+}
+
+@media only screen and (max-width: 955px) {
+   .float-btn {
+      position: relative;
+      transform: translate(-168px, 450px) rotate(90deg);
+   }
+}
+
+@media only screen and (max-width: 862px) {
+   .float-btn {
+      position: relative;
+      transform: translate(-157px, 450px) rotate(90deg);
+   }
+}
+
+@media only screen and (max-width: 1088px) {
+   .float-btn-hide {
+      transform: rotate(90deg);
+
+      img {
+         width: 75%;
+      }
+
+   }
+
+}
+
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1088px) {
+   .float-btn-hide {
+      display: block;
+
+
+   }
+}
+
+
+
+
+@media screen and (max-width: 769px) {
+   .btn-send {
+      font-size: 1.15rem;
+
+   }
+}
+
+
+@media screen and(max-width: 768px) {
+
+   .spacing {
+      letter-spacing: 3.2px;
+   }
+
+   .f_vivir {
+      margin-left: 0;
+      line-height: 0.8;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .img-ubicacion {
+      max-width: 100%;
+   }
+   .legal{
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .my-1 {
+      margin: 18px 0 15px 0;
+   }
+}
+
+@media screen and(max-width:768px) {
+   .bold {
+      font-weight: bold;
+   }
+}
