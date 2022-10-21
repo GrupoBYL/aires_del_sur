@@ -483,7 +483,10 @@ a:active {
    justify-content: center;
    align-items: center;
 }
-.btn-plantas {
+.btn-locales{
+   background-color: gray;
+}
+.btn-plantas, .btn-locales {
    padding: 8px 0;
    background-color: $primary;
    width: 70%;
@@ -499,7 +502,7 @@ a:active {
          font-size: 1.2rem;
          flex-direction: column;
          }
-   &-title{
+   &-title, &-locales{
      @media screen and (min-width: 506px) {
          margin-left: 5px;
      
@@ -509,9 +512,12 @@ a:active {
      
          }
       }
+      
    }
 
-
+.btn-locales{
+   background-color: gray;
+}
 .bloque-btninfo{
     background-color: $primary;
    cursor: pointer;
