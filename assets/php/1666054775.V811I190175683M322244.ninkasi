@@ -1,0 +1,112 @@
+Return-Path: <>
+X-Original-To: adm_loga@ninkasi.dreamhost.com
+Delivered-To: adm_loga@ninkasi.dreamhost.com
+Received: from pdx1-shared-relay.dreamhost.com (pdx1-shared-relay.dreamhost.com [69.163.136.89])
+	by ninkasi.dreamhost.com (Postfix) with ESMTP id 4MrwVv2FWVz25x
+	for <adm_loga@ninkasi.dreamhost.com>; Tue, 18 Oct 2022 00:59:35 +0000 (UTC)
+Received: by pdx1-shared-relay.dreamhost.com (Postfix)
+	id 4MrwVv1cNkz1hs; Mon, 17 Oct 2022 17:59:35 -0700 (PDT)
+Date: Mon, 17 Oct 2022 17:59:35 -0700 (PDT)
+From: MAILER-DAEMON@pdx1-shared-relay.dreamhost.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: adm_loga@ninkasi.dreamhost.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="4MrwVt4d51z1Ps.1666054775/pdx1-shared-relay.dreamhost.com"
+Content-Transfer-Encoding: 8bit
+Message-Id: <4MrwVv1cNkz1hs@pdx1-shared-relay.dreamhost.com>
+
+This is a MIME-encapsulated message.
+
+--4MrwVt4d51z1Ps.1666054775/pdx1-shared-relay.dreamhost.com
+Content-Description: Notification
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+This is the mail system at host pdx1-shared-relay.dreamhost.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+If you are a current customer of DreamHost, please contact our
+technical support team here
+
+https://panel.dreamhost.com/support
+
+If you are not a customer please use our contact form at.
+
+http://dreamhost.com/contact
+
+If you do so, please include this email in your support ticket. You can
+delete your own text from the attached returned message.
+
+                DreamHost Email Support
+
+<sbustos@grupobyl.cl>: host aspmx.l.google.com[74.125.142.26] said: 550-5.1.1
+    The email account that you tried to reach does not exist. Please try
+    550-5.1.1 double-checking the recipient's email address for typos or
+    550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser
+    v10-20020a1709029a0a00b001768452d4d0si13506876plp.30 - gsmtp (in reply to
+    RCPT TO command)
+
+--4MrwVt4d51z1Ps.1666054775/pdx1-shared-relay.dreamhost.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; pdx1-shared-relay.dreamhost.com
+X-Postfix-Queue-ID: 4MrwVt4d51z1Ps
+X-Postfix-Sender: rfc822; adm_loga@ninkasi.dreamhost.com
+Arrival-Date: Mon, 17 Oct 2022 17:59:34 -0700 (PDT)
+
+Final-Recipient: rfc822; sbustos@grupobyl.cl
+Original-Recipient: rfc822;sbustos@grupobyl.cl
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; aspmx.l.google.com
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does
+    not exist. Please try 550-5.1.1 double-checking the recipient's email
+    address for typos or 550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser
+    v10-20020a1709029a0a00b001768452d4d0si13506876plp.30 - gsmtp
+
+--4MrwVt4d51z1Ps.1666054775/pdx1-shared-relay.dreamhost.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 8bit
+
+Return-Path: <adm_loga@ninkasi.dreamhost.com>
+Received: from ninkasi.dreamhost.com (unknown [75.119.200.139])
+	by pdx1-shared-relay.dreamhost.com (Postfix) with ESMTP id 4MrwVt4d51z1Ps
+	for <sbustos@grupobyl.cl>; Mon, 17 Oct 2022 17:59:34 -0700 (PDT)
+Received: by ninkasi.dreamhost.com (Postfix, from userid 5118253)
+	id 4MrwVs4lv5z268; Tue, 18 Oct 2022 00:59:33 +0000 (UTC)
+To: sbustos@grupobyl.cl
+Subject: [Loga] Tu sitio se ha actualizado a WordPress 4.8.21
+X-PHP-Originating-Script: 5118253:class-phpmailer.php
+Date: Tue, 18 Oct 2022 00:59:33 +0000
+From: WordPress <wordpress@loga.cl>
+Message-ID: <6386ba19f43c6e065734ee21d7717adb@www.loga.cl>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+¡Hola! Tu sitio https://www.loga.cl se ha actualizado automáticamente a WordPress 4.8.21.
+
+Para más información sobre la versión 4.8.21 revisa la pantalla Acerca de WordPress:
+https://www.loga.cl/wp-admin/about.php
+
+WordPress 6.0.3 también está ahora disponible. Actualizar es fácil y solo dura un momento:
+https://www.loga.cl/wp-admin/update-core.php
+
+Si tienes algún problema o necesitas ayuda, los voluntarios en los foros de soporte WordPress.org pueden ayudarte.
+http://es.forums.wordpress.org/
+
+Mantener tu sitio actualizado es importante para la seguridad. También hace que internet sea un lugar más seguro para ti y tus lectores.
+
+El equipo de WordPress
+
+
+--4MrwVt4d51z1Ps.1666054775/pdx1-shared-relay.dreamhost.com--

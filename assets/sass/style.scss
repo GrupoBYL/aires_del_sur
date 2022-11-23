@@ -11,9 +11,9 @@ $red:red;
 
 //set your typography
 
-$size-1: 0.813rem;//13px
-$size-2: 1rem; 
-$size-3: 2rem;//
+$size-1: 0.813rem; //13px
+$size-2: 1rem;
+$size-3: 2rem; //
 
 $size-8: 1.375rem; //22px
 $size-9: 3.375rem;
@@ -27,42 +27,52 @@ $size-10:0.60rem;
    font-family: "f_mpr";
    src: url("../fonts/MyriadPro-Regular.otf");
 }
+
 @font-face {
    font-family: "f_mps";
    src: url("../fonts/MyriadPro-Semibold.otf");
 }
+
 @font-face {
    font-family: "f_mpb";
    src: url("../fonts/MyriadPro-Bold.otf");
 }
+
 @font-face {
    font-family: "f_sr";
    src: url("../fonts/sinkin-sans.400-regular.otf");
 }
+
 @font-face {
    font-family: "f_sm";
    src: url("../fonts/sinkin-sans.500-medium.otf");
 }
+
 @font-face {
    font-family: "f_sli";
    src: url("../fonts/SinkinSans-300Light.otf");
 }
+
 @font-face {
    font-family: "f_ssm";
    src: url("../fonts/SinkinSans-600SemiBold.otf");
 }
+
 @font-face {
    font-family: "f_ur";
    src: url("../fonts/UniversLTStd.otf");
 }
+
 @font-face {
    font-family: "f_ub";
    src: url("../fonts/UniversLTStd-Bold.otf");
 }
+
 @font-face {
    font-family: "f_kinan";
    src: url("../fonts/Kinan.ttf");
 }
+
 @font-face {
    font-family: "f_aquatico";
    src: url("../fonts/Aquatico-Regular.otf");
@@ -104,15 +114,19 @@ $size-10:0.60rem;
 .f_ur {
    font-family: "f_ur";
 }
+
 .f_ub {
    font-family: "f_ub";
 }
+
 .f_kinan {
    font-family: "f_kinan";
 }
+
 .f_aquatico {
    font-family: "f_aquatico";
 }
+
 .p-1 {
    padding: 0.2rem;
 }
@@ -129,6 +143,9 @@ $size-10:0.60rem;
    padding: 10px 0 20px 0;
 }
 
+.p-20 {
+   padding: 0 20px;
+}
 
 .ml-1 {
    margin-left: 148px;
@@ -149,9 +166,11 @@ $size-10:0.60rem;
 .mt-2 {
    margin-top: 25px;
 }
-.mt-50{
+
+.mt-50 {
    margin-top: 50px;
 }
+
 .my-1 {
    margin: 60px 0 15px 0;
 }
@@ -160,19 +179,34 @@ $size-10:0.60rem;
    font-size: $size-10;
 }
 
- .fondo-header {
+.fondo-header {
    min-height: 100vh !important;
-   background-image:/* linear-gradient(
+   background-image:
+      /* linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ), */ url("../img/aires-bg.jpg");
+    ), */
+      url("../img/aires-bg.jpg");
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   background-position-y:8px ;
+   background-position-y: 8px;
+
+   /* @media screen and (max-width:360px) {
+      display: none;
+   } */
+
+}
+
+.fondo-mobile {
+   min-height: 100vh !important;
+   background-image: url("../img/foto-background-mobile.jpg");
+   background-position:top;
+   background-repeat: no-repeat;
+   background-size: contain;
    
-   
-} 
+}
+
 
 
 .container-form {
@@ -206,27 +240,38 @@ $size-10:0.60rem;
    border: none;
    opacity: 0.9;
    font-size: $size-1;
+
    @media screen and (max-width:402px) {
       font-size: 0.583rem !important;
    }
 }
-.first__title{
+
+.first__title {
    font-size: 1.6rem;
-   @media only  screen and (min-width: 1280px) and (max-width: 1471px) {
-      font-size: 1.85rem;
+
+   @media only screen and (min-width: 1280px) and (max-width: 1471px) {
+      font-size: 1.45rem;
    }
+
+   @media screen and (max-width:1279px) {
+      font-size: 1.2rem;
+   }
+
    @media screen and (min-width:1472px) {
       font-size: 1.60rem;
    }
+
    @media screen and (max-width:505px) {
-      font-size: 1.7rem;
+      font-size: 1.8rem;
+      line-height: 1.28;
    }
-   &-inline{
+
+   &-inline {
       @media screen and (max-width: 505px) {
          display: inline-block;
       }
    }
-   
+
 }
 
 .input::placeholder {
@@ -276,22 +321,28 @@ button {
 }
 
 /* Firefox 19+ */
-.navBar{
-   
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
+.navBar {
+
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 10;
 
 }
+
 .logo {
    width: 280px;
    text-align: center;
-   margin-top: 45px
+   margin: 45px 0;
+   @media screen and(max-width:500px) {
+      width: 205px;
+   }
 }
-.logo-container{
+
+.logo-container {
    margin: 0 30px;
 }
+
 .spacing {
    letter-spacing: 11.2px;
 }
@@ -316,7 +367,7 @@ button {
 .container-ubicacion {
    display: flex;
    justify-content: center;
-   padding-bottom:50px;
+   padding-bottom: 50px;
    padding-top: 20px;
    flex-direction: column;
    align-items: center;
@@ -351,9 +402,9 @@ button {
 
 /* Modal Content/Box */
 .modal-content {
-   margin: 2% auto;
-   padding: 20px;
-   width: 90vw;
+   margin: 0 auto 2%;
+
+   width: 93vw;
    /* Could be more or less, depending on screen size */
 }
 
@@ -367,6 +418,7 @@ button {
    height: 50px;
    right: 0;
    top: 0;
+   z-index: 20;
 }
 
 .error {
@@ -421,7 +473,7 @@ button {
    margin-top: 5px;
 }
 
-.bloque-adress{
+.bloque-adress {
    background-color: $primary;
    padding: 10px 0;
 }
@@ -466,27 +518,49 @@ a:active {
 .hero-modal {
    max-width: 100%;
    margin-bottom: 30px;
-   @media screen and (max-width:786px){
+
+   @media screen and (max-width:786px) {
       max-width: 100%;
+   }
+
+   @media screen and (max-width:389px) {
+      display: none;
+   }
+}
+
+.hero-modal-mobile {
+   display: none;
+
+   @media screen and (max-width:389px) {
+      display: block;
    }
 }
 
 .bloque-pe {
-   p{
+   p {
       color: $primary;
       letter-spacing: 0.15px;
+      
+      padding: 0;
    }
+
    background-color: #fff;
    width: 85%;
-   
+
    display: flex;
    justify-content: center;
    align-items: center;
+   @media screen and (max-width: 500px) {
+      width: 75%;
+   }
 }
-.btn-locales{
+
+.btn-locales {
    background-color: gray;
 }
-.btn-plantas, .btn-locales {
+
+.btn-plantas,
+.btn-locales {
    padding: 8px 0;
    background-color: $primary;
    width: 70%;
@@ -494,38 +568,45 @@ a:active {
    justify-content: center;
    align-items: center;
    cursor: pointer;
+
    @media screen and (min-width:769px) and (max-width:957px) {
       flex-direction: column;
    }
+
    @media screen and (max-width: 505px) {
-         
-         font-size: 1.2rem;
-         flex-direction: column;
-         }
-   &-title, &-locales{
-     @media screen and (min-width: 506px) {
-         margin-left: 5px;
-     
-         }
-      @media screen and (max-width: 505px) {
-         display: inline-block;
-     
-         }
-      }
-      
+
+      font-size: 1.2rem;
+      flex-direction: column;
    }
 
-.btn-locales{
+   &-title,
+   &-locales {
+      @media screen and (min-width: 506px) {
+         margin-left: 5px;
+
+      }
+
+      @media screen and (max-width: 505px) {
+         display: inline-block;
+
+      }
+   }
+
+}
+
+.btn-locales {
    background-color: gray;
 }
-.bloque-btninfo{
-    background-color: $primary;
+
+.bloque-btninfo {
+   background-color: $primary;
    cursor: pointer;
    display: flex;
    justify-content: center;
    align-items: center;
    padding: 8px 0;
 }
+
 .depto-relative {
    position: relative;
 }
@@ -543,7 +624,7 @@ a:active {
 }
 
 
-.btn-submit{
+.btn-submit {
    display: flex;
    justify-content: center;
 }
@@ -551,77 +632,87 @@ a:active {
 
 
 
-.squareTypeA::before{
+.squareTypeA::before {
    content: '';
    border: 8px solid #8093DC;
    background-color: #8093DC;
    margin-right: 10px;
- 
+
 }
-.squareTypeB::before{
+
+.squareTypeB::before {
    content: '';
    border: 8px solid #89B51F;
    background-color: #89B51F;
    margin-right: 10px;
-   
+
 }
-.squareTypeC::before{
+
+.squareTypeC::before {
    content: '';
    border: 8px solid #00A6CE;
    background-color: #00A6CE;
    margin-right: 10px;
-   
+
 }
-.squareTypeD::before{
+
+.squareTypeD::before {
    content: '';
    border: 8px solid #D2D000;
    background-color: #D2D000;
    margin-right: 10px;
-   
+
 }
-.squareTypeE::before{
+
+.squareTypeE::before {
    content: '';
    border: 8px solid #E78600;
    background-color: #E78600;
    margin-right: 10px;
-   
+
 }
 
-.metro-cuadrado{
+.metro-cuadrado {
    font-size: 1.08rem;
 }
-nav{
-   height:60px;
+
+nav {
+   height: 60px;
    display: flex;
    align-items: center;
 }
-.bg-dark{
+
+.bg-dark {
    background-color: $secondary;
 }
 
-.container-hero-text{
+.container-hero-text {
    position: relative;
-   .hero-text1{
+
+   .hero-text1 {
       position: absolute;
       bottom: 26%;
       left: 42%;
    }
-   .hero-text2{
-   font-size: $size-9;
-    position: absolute;
-    top: 69%;
-    left: 48%;
+
+   .hero-text2 {
+      font-size: $size-9;
+      position: absolute;
+      top: 69%;
+      left: 48%;
 
    }
 }
 
-.topologia-modal{
+.topologia-modal {
    margin-top: 15px;
 }
-.horario-atencion{
+
+.horario-atencion {
    font-size: 0.66rem;
 }
-.footer{
+
+.footer {
    width: 100%;
    height: 60px;
    background-color: $primary;
@@ -630,22 +721,28 @@ nav{
    justify-content: center;
    align-items: center;
    padding: 20px 0;
-   &-icon{
+
+   &-icon {
       color: #fff;
    }
+
    @media screen and (max-width:600px) {
       height: 85px;
    }
 }
-.footer p{
+
+.footer p {
    margin: 0 10px;
-   img{
+
+   img {
       margin-right: 5px;
    }
+
    a {
       margin: 0 5px;
       color: #fff;
    }
+
    @media screen and (max-width:600px) {
       display: flex;
       justify-content: center;
@@ -654,15 +751,17 @@ nav{
       font-size: 0.70rem;
    }
 }
+
 @media screen and (max-width: 768px) {
    .font-svg-titulo {
       max-width: 72%;
 
    }
-.modal-content{
-   margin: 10% auto;
-}
-   
+
+   .modal-content {
+      margin: 10% auto;
+   }
+
 }
 
 
@@ -771,7 +870,8 @@ nav{
    .img-ubicacion {
       max-width: 100%;
    }
-   .legal{
+
+   .legal {
       width: 100%;
    }
 }
@@ -785,5 +885,76 @@ nav{
 @media screen and(max-width:768px) {
    .bold {
       font-weight: bold;
+   }
+}
+
+.container-hero-text,
+.container-hero-text-local {
+   position: relative;
+   top: 0;
+   width: 100%;
+   z-index: 9;
+}
+
+.space1 {
+   height: 300px;
+}
+
+.space {
+   height: 200px;
+}
+
+.local-img {
+   width: 70%;
+}
+
+.local-ubicometro {
+   width: 90%;
+}
+
+.local-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 17%;
+   flex-wrap: wrap;
+
+   @media screen and (max-width:768px) {
+      flex-direction: column;
+      padding: 0 5%;
+   }
+}
+
+@media screen and (max-width:768px) {
+   .local-img {
+      width: 100%;
+   }
+
+   .local-ubicometro {
+      width: 100%;
+   }
+}
+
+@media screen and (max-width:1279px) {
+   .local-container {
+      padding: 0 12%;
+   }
+}
+
+.local-wrap>div p {
+   color: $primary;
+   cursor: pointer;
+}
+
+.text-inscripcion {
+   font-size: 2.3rem;
+   @media screen and (max-width: 500px) {
+      font-size: 1.4rem;
+   }
+}
+
+@media screen and (max-width: 428px) {
+   body{
+      background-color: #3c3d3c;
    }
 }

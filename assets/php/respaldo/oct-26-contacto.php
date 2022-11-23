@@ -1,12 +1,8 @@
- <?php
-	/* error_reporting(E_ALL);
-ini_set('display_errors', '1'); */
-	?> 
+
 <?php
 // Conexion a la base de datos
-ini_set("date.timezone", "America/Santiago");
 require('classes/MysqliDb.php');
-
+include('classes/phpmailer/PHPMailerAutoload.php');
 
 
 //production
@@ -54,8 +50,12 @@ if ($_POST['nombre']) {
 	$id = $db->insert('airesdelsur', $data);
 }
 
-
-if (!$id) {
+if ($id) {
+	echo $response = array(
+		"res" => true,
+		"data" => $data,
+	);
+} else {
 	echo $response = array(
 		"res" => false,
 		"data" => $data,
@@ -64,29 +64,20 @@ if (!$id) {
 }
 
 if ($id) {
-	require_once('classes/phpmailer/PHPMailerAutoload.php');
+
 	// cuerpo correo
-	$mail = new PHPMailer(true);
+	$mail = new PHPMailer();
 	$mail->CharSet = 'UTF-8';
-	//$mail->SMTPDebug = 2; // Enable verbose debug output
-	$mail->isSMTP(); // Set mailer to use SMTP
-	$mail->Host = 'smtp-mail.outlook.com'; // Specify main and backup SMTP servers
-	$mail->SMTPAuth = true; // Enable SMTP authentication
-	$mail->Username = "noreply@loga.cl";
-	$mail->Password = "C=3kb%Ca";
-	$mail->SMTPSecure = 'tls'; // Enable SSL encryption, TLS also accepted with port 465
-	$mail->Port = 587; // TCP port to connect to 
 	$mail->setFrom('noreply@loga.cl', 'Inscripcion Aires del Sur');
-	//$mail->addAddress('dcaldera@grupobyl.cl');
-	//$mail->addAddress('opezoa@grupobyl.cl');
+	$mail->addAddress('dcaldera@grupobyl.cl');
+	$mail->addAddress('opezoa@grupobyl.cl');
 	/*$mail->addAddress('televentas@loga.cl');
 	$mail->addAddress('dvilches@loga.cl');
 	$mail->addAddress('saguayo@loga.cl');*/
 
-	$mail->addAddress('javieraguerra@loga.cl');
+	/* 	$mail->addAddress('javieraguerra@loga.cl');
 	$mail->addAddress('dvilches@loga.cl');
-	$mail->addAddress('saguayo@loga.cl');
-	$mail->addAddress('airesdelsur@loga-cl-logaservicios.odoo.com');
+	$mail->addAddress('saguayo@loga.cl'); */
 
 	$mail->isHTML(true);   // Set email format to HTML
 
